@@ -1,0 +1,166 @@
+
+
+Reading data from comb_nodding_CD35b.vels
+
+
+                              Offset block added, OffsetBlock
+                              Jitter block added, JitterBlock
+                              Keplerian block added, KeplerianBlock 1
+                              Keplerian block added, KeplerianBlock 2
+
+Condition applied: Parameter Period 1 attribute limits set to [150, 500]
+Condition applied: Parameter Period 1 attribute init_pos set to [169.5, 170.0]
+Condition applied: Parameter Amplitude 1 attribute limits set to [0.001, 500]
+Condition applied: Parameter Amplitude 1 attribute init_pos set to [239.8, 240.0]
+Condition applied: Parameter Phase 1 attribute init_pos set to [2.01, 2.02]
+Condition applied: Parameter Ecc_sin 1 attribute prior set to Normal
+Condition applied: Parameter Ecc_sin 1 attribute prargs set to [0, np.float64(0.1414213562373095)]
+Condition applied: Parameter Ecc_cos 1 attribute prior set to Normal
+Condition applied: Parameter Ecc_cos 1 attribute prargs set to [0, np.float64(0.1414213562373095)]
+Condition applied: Parameter Period 2 attribute limits set to [100, 120]
+Condition applied: Parameter Period 2 attribute init_pos set to [109, 111]
+Condition applied: Parameter Amplitude 2 attribute limits set to [0.001, 500]
+Condition applied: Parameter Amplitude 2 attribute init_pos set to [55, 60]
+Condition applied: Parameter Ecc_sin 2 attribute prior set to Normal
+Condition applied: Parameter Ecc_sin 2 attribute prargs set to [0, np.float64(0.1414213562373095)]
+Condition applied: Parameter Ecc_cos 2 attribute prior set to Normal
+Condition applied: Parameter Ecc_cos 2 attribute prargs set to [0, np.float64(0.1414213562373095)]
+Condition applied: Parameter Offset 1 attribute limits set to [-150, 30]
+Condition applied: Parameter Offset 1 attribute init_pos set to [-62.1, -62.0]
+Condition applied: Parameter Jitter 1 attribute limits set to [0, 60]
+Condition applied: Parameter Jitter 1 attribute prargs set to [0, 10]
+Condition applied: Parameter Jitter 1 attribute init_pos set to [0, 5]
+~~ Setup Info ~~
+Current Engine is            reddemcee 0.9.10
+Number of cores is           16
+Save location is             datalogs/CD352722/run_2/k2
+Dynamical Criteria is        None
+Posterior fit method is      Gaussian Mixtures
+Limits constrain method is   None
+Model Selection method is    BIC
+
+~~ Automatically Saving ~~
+Logger       : ✔
+Samples      : 3✘
+Posteriors   : ✔
+Likelihoods  : ✔
+Plots: Posteriors           : ✔
+Plots: Keplerian Model      : ✔
+Plots: Gaussian Mixture     : ✔
+Plots: Parameter Histograms : 3✘
+Plots: Corner               : ✔
+
+~~ Pre-Run Info ~~
+Parameter      Prior                Limits
+-------------  -------------------  -------------------------
+Period 1       ~𝓤 (150, 500)        [150. 500.]
+Amplitude 1    ~𝓤 (0.001, 500.0)    [1.e-03 5.e+02]
+Phase 1        ~𝓤 (0.0, 6.283)      [0.    6.283]
+Ecc_sin 1      ~𝓝 (0.0, 0.141)      [-1.  1.]
+Ecc_cos 1      ~𝓝 (0.0, 0.141)      [-1.  1.]
+-------------  -------------------  -------------------------
+Period 2       ~𝓤 (100, 120)        [100. 120.]
+Amplitude 2    ~𝓤 (0.001, 500.0)    [1.e-03 5.e+02]
+Phase 2        ~𝓤 (0.0, 6.283)      [0.    6.283]
+Ecc_sin 2      ~𝓝 (0.0, 0.141)      [-1.  1.]
+Ecc_cos 2      ~𝓝 (0.0, 0.141)      [-1.  1.]
+-------------  -------------------  -------------------------
+Offset 1       ~𝓤 (-150, 30)        [-150   30]
+-------------  -------------------  -------------------------
+Jitter 1       ~𝓝 (0, 10)           [ 0 60]
+
+Math for KeplerianBlock 1: K⋅(cos(ν(t,P,𝜙,e)+𝜔 )+e⋅cos(𝜔 ))|₁
+Math for KeplerianBlock 2: K⋅(cos(ν(t,P,𝜙,e)+𝜔 )+e⋅cos(𝜔 ))|₂
+Math for OffsetBlock: γ₀|ᵢ
+Math for JitterBlock: 𝝈ᵢ
+
+
+~~ Best Fit ~~
+Parameter            Value (max)  Range (-+ sig)     Prior              Limits
+-----------------  -------------  -----------------  -----------------  ---------------
+Period 1                 169.266  [-0.706  0.405]    ~𝓤 (150, 500)      [150. 500.]
+Amplitude 1              266.996  [-14.432   3.121]  ~𝓤 (0.001, 500.0)  [1.e-03 5.e+02]
+Phase 1                    4.712  [-0.607  1.091]    ~𝓤 (0.0, 6.283)    [0.    6.283]
+Ecc_sin 1                  0.024  [-0.078  0.035]    ~𝓝 (0.0, 0.141)    [-1.  1.]
+Ecc_cos 1                 -0.059  [-0.021  0.101]    ~𝓝 (0.0, 0.141)    [-1.  1.]
+Eccentricity 1             0.004  [-0.004  0.01 ]                       [0. 1.]
+Longitude 1                2.759  [-0.948  0.737]                       [0.    6.283]
+Semi-Major Axis 1          0.196  [-0.001  0.002]                       [   0. 1000.]
+Minimum Mass 1             0.78   [-0.043  0.016]                       [   0. 1000.]
+-----------------  -------------  -----------------  -----------------  ---------------
+Period 2                 115.491  [-0.837  0.759]    ~𝓤 (100, 120)      [100. 120.]
+Amplitude 2              202.274  [-30.088  27.013]  ~𝓤 (0.001, 500.0)  [1.e-03 5.e+02]
+Phase 2                    2.175  [-0.341  0.151]    ~𝓤 (0.0, 6.283)    [0.    6.283]
+Ecc_sin 2                 -0.066  [-0.02   0.101]    ~𝓝 (0.0, 0.141)    [-1.  1.]
+Ecc_cos 2                  0.34   [-0.099  0.01 ]    ~𝓝 (0.0, 0.141)    [-1.  1.]
+Eccentricity 2             0.12   [-0.061  0.055]                       [0. 1.]
+Longitude 2                6.09   [-0.331  0.193]                       [0.    6.283]
+Semi-Major Axis 2          0.147  [-0.003  0.006]                       [   0. 1000.]
+Minimum Mass 2             0.483  [-0.046  0.022]                       [   0. 1000.]
+-----------  -------------  ----------------  -------------  -----------
+Offset 1           -31.793  [-8.358  1.867]   ~𝓤 (-150, 30)  [-150   30]
+-----------  -------------  ----------------  ----------  --------
+Jitter 1            17.513  [-5.636  6.671]   ~𝓝 (0, 10)  [ 0 60]
+
+~~ Run Info ~~
+
+
+Info                                 Value
+-----------------------------------  ------------------------------------------------------------------------------------------
+Star Name                      :     CD352722
+The sample sizes are           :     [1599997, 1599999, 1600000, 1600000, 1600000, 1600000, 1600000, 1600000, 1600000, 1600000]
+Temps, Walkers, Sweeps, Steps  :     [np.int64(10), np.int64(128), np.int64(50000), np.int64(1)]
+Model used is                  :     ['KeplerianBlock 1', 'KeplerianBlock 2', 'OffsetBlock', 'JitterBlock'](12)
+N data                         :     20
+t0 epoch is                    :     2460230.86549198
+Number of Dimensions           :     12
+Degrees of Freedom             :     8
+----------------------------------------
+
+Decay Timescale, Rate, Scheme   :   100, 1.5, 0
+
+Beta Detail                     :   [1.0, 0.6302, 0.3864, 0.2309, 0.1345, 0.0736, 0.03916, 0.01905, 0.007641, 0.002111]
+
+Mean Logl Detail                :   [-104.967, -108.052, -112.534, -119.796, -131.441, -149.399, -179.848, -237.120, -342.761, -579.708]
+
+Mean Acceptance Fraction        :   [0.109, 0.103, 0.098, 0.096, 0.104, 0.122, 0.144, 0.168, 0.186, 0.195]
+
+Autocorrelation Time            :   [65.380, 440.993, 1155.696, 693.854, 864.833, 420.266, 594.235, 597.862, 589.625, 772.568, 496.786, 471.818]
+
+Temperature Swap Rate           :   [0.422, 0.422, 0.422, 0.421, 0.421, 0.421, 0.420, 0.420, 0.419]
+
+Mean Swap Distance              :   [27.108, 37.981, 52.402, 64.114, 71.550, 79.501, 89.584, 97.590, 107.666]
+
+
+~~ Statistical Details ~~
+
+Statistic                      Value
+-----------------------------  -----------------
+The evidence is             :  -125.238 +- 1.269
+The maximum posterior is    :  -134.434
+The maximum likelihood is   :  -101.267
+The BIC is                  :  238.483
+The AIC is                  :  226.534
+The DIC is                  :  1525.442
+The HQIC is                 :  228.867
+The Bayes Factor is         :  23.971
+The chi2 is                 :  22.923
+The reduced chi2 is         :  2.865
+The RMSE is                 :  34.548
+The RMSi is                 :  [34.548]
+The Weights are             :  [1.]
+
+
+
+Time Table
+Time RUN                   : 00:31:21
+Time POSTPROCESS           : 00:01:41
+Time CALCULATE GM          : 00:00:57
+Time plot_posteriors       : 00:00:09
+Time plot_histograms       : 00:00:00
+Time plot_keplerian_model  : 00:00:00
+Time plot_betas            : 00:00:00
+Time plot_beta_density     : 00:00:00
+Time plot_rates            : 00:00:02
+Time plot_trace            : 00:00:10
+
